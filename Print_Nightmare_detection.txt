@@ -1,4 +1,4 @@
-Look for new subkeys under the following registry key. When you exploit the Print Nightmare vulnerability, it created a new driver, which then creats an entry in the following key. Inside the newly created registry key, look for the value "Configuration File", the data in the value is the malicious .dll that will be loaded as part of the vulnerability. 
+Look for new subkeys under the following registry key. When you exploit the Print Nightmare vulnerability, it creats a new driver, which then creats an entry in the following key. Inside the newly created registry key, look for the value "Configuration File", the data in the value is the malicious .dll that will be loaded as part of the vulnerability. 
 HKLM\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows x64\Drivers\Version-3\
 
 Below is an example of the registry key after you run Invoke-Printnightmare.ps1, which is PowerShell Empire's version of the exploit.
